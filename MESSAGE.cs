@@ -13,7 +13,8 @@ namespace AKTARPV22_2_1
             private readonly string _author;
             private readonly DateTime _time;
             private int _likes;
-
+            
+            public Message() { }
             public Message(string content, string author, DateTime time)
             {
                 this._content = content;
@@ -45,7 +46,7 @@ namespace AKTARPV22_2_1
         public void ShowMessage()
         {
             
-            Console.WriteLine("Sisu: {0}\nAutor: {1}\nLikes: {2}", Content,Author,_likes);
+            Console.WriteLine("Sisu: {0}\nAutor: {1}\nLikes: {2}\n------------", Content,Author,_likes);
         }
 
         public string GetPopularityInfo(double esimene, double teine)
@@ -56,18 +57,7 @@ namespace AKTARPV22_2_1
             return rezult;
         }
 
-        public string GenerateMessages(List<Message> messages)
-        {
-            Random random= new Random();
-            int RandomInt = random.Next(0, 10);
-            for (int i = 0; i == RandomInt; i++)
-            {
-                int a = 0;
-                a++;
-                Message m[a] = new Message("Hello", "John", DateTime.Now.AddDays(-10));
-
-            }
-        }
+        
 
         public string GetPopularityInfoN(List<Message> messages)
         {
