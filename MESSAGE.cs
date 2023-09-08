@@ -114,6 +114,7 @@ namespace AKTARPV22_2_1
                     newmessage.AddLike();
 
                 }
+
                 messagelist.Add(newmessage);
                 messagelist[i].ShowMessageInfo();
 
