@@ -6,6 +6,7 @@
         {
             Message.MainAuto();
             Console.ReadLine();
+
         }
     }
 }
